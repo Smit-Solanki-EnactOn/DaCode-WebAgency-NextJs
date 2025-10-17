@@ -1,0 +1,81 @@
+@import "./scss/variables";
+@import "./scss/button.scss";
+@import "./scss/base.scss";
+
+// Reusable Components
+// @import "../components/Generic/Cards/InfoCard/info-card.scss";
+// @import "../components/Generic/Cards/StepsCard/steps-card.scss";
+
+// Bootstrap 
+@import "~bootstrap/scss/bootstrap";
+
+// Sections
+// @import "../components/Generic/Header/header.scss";
+// @import "../components/Generic/Section/HeroSection/hero-section.scss";
+// @import "../components/Generic/Section/ServiceSection/service-section.scss";
+// @import "../components/Generic/Section/OurWorkSection/our-work-section.scss";
+// @import "../components/Generic/Section/OurStrategy/our-strategy.scss";
+// @import "../components/Generic/Section/TestimonialSection/testimonial-section.scss";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $white-color;
+  color: $black-color;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-color {
+  color: $primary-color;
+}
+.secondary-color {
+  color: $secondary-color;
+}
+
+.main-section-wrapper {
+  padding-top: 90px;
+}
+
+.swiper-pagination {
+  bottom: -20px !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    margin: 0 !important;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+      transform: scale(1.15);
+    }
+
+    &.swiper-pagination-bullet-active {
+      background: $black-color;
+      width: 32px;
+      border-radius: 6px;
+      transform: scale(1);
+      position: relative;
+
+      &:hover {
+        background: $black-color;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// SCSS Variables
+
+$primary-color: #60e1cb;
+$secondary-color: #7bc0e3;
+$black-color: #000;
+$white-color: #fff;
+$gold-color: #fbbe36;
+$offwhite-color: #e9fbf8;
+
+$border-light: #e9ecef;
+
+$primary-shadow: 0 46px 64px rgba(96, 225, 203, 0.56);
+$dark-shadow: 0 0 52px rgba(54, 184, 162, 1);
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+$transition-all: all 0.3s ease;
+$text-muted: #6c757d;
+
+// :export {
+//   primaryColor: $primary-color;
+//   secondaryColor: $secondary-color;
+//   blackColor: $black-color;
+//   whiteColor: $white-color;
+//   goldColor: $gold-color;
+//   offwhiteColor: $offwhite-color;
+//   borderLight: $border-light;
+//   primaryShadow: $primary-shadow;
+//   darkShadow: $dark-shadow;
+//   shadowSm: $shadow-sm;
+//   shadowMd: $shadow-md;
+//   shadowLg: $shadow-lg;
+//   transitionAll: $transition-all;
+//   textMuted: $text-muted;
+// }

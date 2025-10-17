@@ -1,0 +1,28 @@
+@import "../scss/variables";
+
+.team-section-wrapper {
+    section.team-section {
+        transform: translateY(-165px);
+        border-radius: 40px;
+
+        @media (max-width: 1200px) {
+            border-radius: 35px;
+            transform: translateY(-100px);
+        }
+
+        @media (max-width: 992px) {
+            border-radius: 30px;
+            transform: translateY(-100px);
+        }
+
+        @media (max-width: 768px) {
+            border-radius: 20px;
+            transform: translateY(-90px);
+        }
+
+        @media (max-width: 576px) {
+            border-radius: 15px;
+            transform: translateY(-100px);
+        }
+    }
+}

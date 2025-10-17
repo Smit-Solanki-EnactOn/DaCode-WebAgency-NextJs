@@ -1,0 +1,55 @@
+@import "./variables";
+
+section {
+  padding: 100px 0;
+
+  @media (max-width: 1200px) {
+    padding: 60px 0;
+  }
+
+  .section-sub-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondary-color;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}
+
+.section-body {
+  margin-top: 30px;
+}
+
+.section-background {
+  background-image: url("../../../public/images/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+
+  @media (max-width: 1200px) {
+    padding: 60px 0;
+  }
+}
+
+.section-0 {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}

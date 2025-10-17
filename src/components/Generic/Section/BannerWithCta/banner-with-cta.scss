@@ -1,0 +1,15 @@
+@import '../../../../app/scss/variables';
+
+.banner-section {
+  background-image: url("../../../../../public/images/banner-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
