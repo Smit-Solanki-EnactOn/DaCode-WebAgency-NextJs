@@ -4,6 +4,7 @@ import { strategyData } from '@/data/myData'
 import StepsCard from '../../Cards/StepsCard/StepsCard';
 import SectionTitle from '@/components/Core/SectionTitle/SectionTitle';
 import './our-strategy.scss'
+import strategyImage from "../../../../../public/images/our-strategy.png"
 
 const OurStrategy = () => {
     // console.log(strategyData);
@@ -36,7 +37,9 @@ const OurStrategy = () => {
                 </div>
 
                 {/* Background Image */}
-                <Image src="/images/our-strategy.png" alt="Background Design" width={700} height={700} className='our-strategy-image' loading='lazy'  />
+                    {strategyImage && (
+                    <Image src={strategyImage} alt="Background Design" width={700} height={700} className='our-strategy-image' loading='lazy'  />
+                )}
 
             </div>
         </section>

@@ -23,11 +23,11 @@
   border: none;
   padding: 14px 20px;
   color: $white-color;
-  box-shadow: $primary-shadow;
   font-size: 16px;
-
+  
   &:hover {
     background-color: darken($primary-color, 10%);
+    box-shadow: $primary-shadow;
   }
 }
 

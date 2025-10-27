@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import ButtonComponent from '@/components/Core/ButtonComponent';
 
 interface UserData {
-  image?: string | null;
+  image: string;
   name?: string;
   position?: string;
   linkedinUrl?: string;
@@ -23,8 +23,9 @@ const UserCard: React.FC<UserCardProps> = ({
   return (
     <div className="user-card">
       <div className="user-card_image-wrapper">
-
-        <Image src={image} alt="User" className="user-card_image" width={110} height={110} loading='lazy'  />
+        {image && ( 
+          <Image src={image} alt="User" className="user-card_image" width={110} height={110} loading='lazy'  />
+        )}
 
         {/* {image ? (
           <Image src={image} alt="User" className="user-card_image" width={110} height={110} loading='lazy'  />

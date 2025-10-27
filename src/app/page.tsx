@@ -9,7 +9,7 @@ import BlogSection from "@/components/Generic/Section/BlogSection/BlogSection";
 
 export default function Home() {
   return (
-    <main className="main-section-wrapper">
+    <main className="main-section-wrapper relative">
       <HeroSection />
       <ServiceSection />
       <OurWorkSection />

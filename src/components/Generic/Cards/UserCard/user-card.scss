@@ -12,6 +12,8 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     padding: 28px 20px;
@@ -68,6 +70,7 @@
   }
 
   .user-card_info {
+    margin-top: auto;
     margin-bottom: 24px;
   }
 
@@ -102,6 +105,8 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   .user-card_linkedin {

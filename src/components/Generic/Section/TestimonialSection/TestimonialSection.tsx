@@ -86,7 +86,7 @@ const TestimonialSection = () => {
                 <div className="testimonials-wrapper">
                     <div className="section-head">
                         <p className="section-sub-title">Testimonials</p>
-                        <SectionTitle title="What Our Clients Say"  />
+                        <SectionTitle title="What Our Clients Say" />
                         {/* <h2 className="section-title">Our Happy Clients</h2> */}
                     </div>
 
@@ -125,16 +125,18 @@ const TestimonialSection = () => {
                                 {testimonials.map((testimonial, index) => (
                                     <div className="swiper-slide" key={index}>
                                         <div className="thumbnail-item">
-                                            <div className="avatar-wrapper">
-                                                <Image
-                                                    src={testimonial.image.replace('/public', '')}
-                                                    alt={testimonial.author}
-                                                    className="avatar-image"
-                                                    width={80}
-                                                    height={80}
-                                                    loading='lazy'
-                                                />
-                                            </div>
+                                            {testimonial.image && (
+                                                <div className="avatar-wrapper">
+                                                    <Image
+                                                        src={testimonial.image}
+                                                        alt={testimonial.author}
+                                                        className="avatar-image"
+                                                        width={80}
+                                                        height={80}
+                                                        loading='lazy'
+                                                    />
+                                                </div>
+                                            )}
                                             <div className="author-info">
                                                 <h3 className="author-name">{testimonial.author}</h3>
                                                 <p className="author-position">{testimonial.position}</p>

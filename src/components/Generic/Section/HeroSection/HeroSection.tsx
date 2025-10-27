@@ -2,14 +2,28 @@
 import React from "react";
 import Image from "next/image";
 import ButtonComponent from "@/components/Core/ButtonComponent";
-import { Modal } from "react-bootstrap";
 import "./hero-section.scss";
+import ModalComponent from "@/components/Core/ModalComponent";
+import heroImage from "../../../../../public/images/hero-image.png"
 
 const HeroSection = () => {
   const [showModal, setShowModal] = React.useState(false);
+  const [isStatic, setIsStatic] = React.useState(false);
 
-  const handleOpen = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const handleOpenDefault = () => {
+    setIsStatic(false);
+    setShowModal(true);
+  };
+
+  const handleOpenStatic = () => {
+    setShowModal(true);
+    setIsStatic(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setIsStatic(false);
+  };
 
   return (
     <section className="hero-section" dir="ltr">
@@ -34,27 +48,30 @@ const HeroSection = () => {
                 label="Get Started"
                 role="button"
                 variant="primary"
-                onClick={handleOpen}
+                onClick={handleOpenDefault}
               />
               <ButtonComponent
                 label="Contact Us"
                 role="button"
                 variant="outline"
+                onClick={handleOpenStatic}
               />
             </div>
           </div>
 
           {/* Right Side */}
-          <div className="hero-image-wrapper">
-            <Image
-              src="/images/hero-image.png"
-              alt="Hero Image"
-              width={700}
-              height={700}
-              className="hero-image"
-              loading="lazy"
-            />
-          </div>
+          {heroImage && (
+            <div className="hero-image-wrapper">
+              <Image
+                src={heroImage}
+                alt="Hero Image"
+                width={700}
+                height={700}
+                className="hero-image"
+                loading="lazy"
+              />
+            </div>
+          )}
         </div>
 
         {/* Background Design */}
@@ -68,6 +85,11 @@ const HeroSection = () => {
           />
         </div>
       </div>
+      <ModalComponent
+        showModal={showModal}
+        handleClose={handleCloseModal}
+        isStatic={isStatic}
+      />
     </section>
   );
 };

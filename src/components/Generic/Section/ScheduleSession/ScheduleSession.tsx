@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import './schedule-session.scss'
+import scheduleImage from "../../../../../public/images/schedule.png"
 
 const ScheduleSession = () => {
     return (
@@ -36,18 +37,23 @@ const ScheduleSession = () => {
                         </p>
                     </div>
 
+
                     <div className="schedule-body">
-                        <p className="schedule-heading">Schedule a free session</p>
-                        <div className="schedule-image-wrapper">
-                            <Image
-                                src="/images/schedule.png"
-                                alt="Schedule Meeting"
-                                className="schedule-image"
-                                width={600}
-                                height={500}
-                                loading='lazy'
-                            />
-                        </div>
+                        {/* <p className="schedule-heading">Schedule a free session</p> */}
+
+                        {scheduleImage && (
+
+                            <div className="schedule-image-wrapper">
+                                <Image
+                                    src={scheduleImage}
+                                    alt="Schedule Meeting"
+                                    className="schedule-image"
+                                    width={600}
+                                    height={500}
+                                    loading='lazy'
+                                />
+                            </div>
+                        )}
                     </div>
                 </div>
 

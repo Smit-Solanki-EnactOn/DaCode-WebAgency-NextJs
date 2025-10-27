@@ -24,6 +24,7 @@ export default function ButtonComponent({
   leftIcon,
   rightIcon,
   customClass,
+  onClick,
 }: ButtonProps) {
   const baseStyle = "button ";
   const style: Record<string, string> = {
@@ -40,6 +41,7 @@ export default function ButtonComponent({
       {role === "button" ? (
         <button
           className={baseStyle + style[variant] + " " + (customClass || "")}
+          onClick={onClick}
         >
           {leftIcon ? leftIcon : null}
           {label ? label : null}
@@ -49,6 +51,7 @@ export default function ButtonComponent({
         <Link
           href={url || "#"}
           className={baseStyle + style[variant] + " " + (customClass || "")}
+          onClick={onClick}
         >
           {leftIcon ? leftIcon : null}
           {label ? label : null}

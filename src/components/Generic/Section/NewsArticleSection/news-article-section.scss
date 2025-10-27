@@ -20,5 +20,41 @@
         gap: 20px;
       }
     }
+
+    .pagination {
+      gap: 5px;
+      li.page-item {
+        z-index: 0;
+        .page-link {
+          border-radius: 0;
+          border-color: $secondary-color !important;
+          background-color: $white-color !important;
+          color: $secondary-color !important;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          font-weight: 700 !important;
+          font-size: 20px;
+
+          &:hover {
+            background-color: lighten($secondary-color, 25%) !important;
+            // color: $white-color !important;
+          }
+
+          span:first-child {
+            svg {
+              font-size: 20px;
+            }
+          }
+        }
+        &.active {
+          .page-link {
+            background-color: $secondary-color !important;
+            color: $white-color !important;
+          }
+        }
+
+     
+      }
+    }
   }
 }

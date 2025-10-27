@@ -1,4 +1,4 @@
-@import '../../../../app/scss/variables';
+@import "../../../../app/scss/variables";
 
 .our-work-section {
   position: relative;
@@ -117,6 +117,8 @@
         }
 
         .swiper-slide {
+          margin-bottom: 0;
+          margin-top: auto;
           .slide-image-wrapper {
             width: 100%;
             overflow: hidden;

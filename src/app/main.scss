@@ -28,7 +28,6 @@ body {
   background-color: $white-color;
   color: $black-color;
   line-height: 1.6;
-  font-family: "Poppins", sans-serif;
 }
 
 .primary-color {
@@ -40,6 +39,7 @@ body {
 
 .main-section-wrapper {
   padding-top: 90px;
+  background-color: $page-color;
 }
 
 .swiper-pagination {

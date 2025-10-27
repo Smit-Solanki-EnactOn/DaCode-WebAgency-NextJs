@@ -1,6 +1,5 @@
 import React from 'react'
 import SectionTitle from '@/components/Core/SectionTitle/SectionTitle'
-import OurTeam from "@/components/Generic/Section/OurTeam/OurTeam"
 import NewsArticleSection from '@/components/Generic/Section/NewsArticleSection/NewsArticleSection'
 
 const page = () => {

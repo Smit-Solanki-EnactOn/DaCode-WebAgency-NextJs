@@ -3,7 +3,7 @@
 export const servicesData = [
   {
     id: 1,
-    icon: "/images/wordpress-website.png",
+    // icon: "/images/wordpress-website.png",
     title: "Web Development",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
@@ -78,7 +78,7 @@ export const tabOptions = [
 export const ourWorkSwiperData = [
   {
     id: 1,
-    image: "/images/work1.png",
+    // image: "/images/work1.png",
     alt: "work1",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus vitae tortor sapien, lectus scelerisque porttitor. Dolor nulla bibendum.",
@@ -156,11 +156,11 @@ export const strategyData = [
 
 // Testimonials Section
 export interface Testimonial {
-  rating: number;
+  rating?: number;
   text: string;
   author: string;
-  position: string;
-  image: string;
+  position?: string;
+  image?: string;
 }
 
 export const testimonials: Testimonial[] = [
@@ -169,7 +169,7 @@ export const testimonials: Testimonial[] = [
     text: "We tried several agencies before we found doCode. Has been a pleasure to work with and will soon start the next project with our second brand.",
     author: "Paulus Haverinen",
     position: "Owner, Ikirakenne Ltd",
-    image: "/images/testimonial-user-1.png",
+    // image: "/images/testimonial-user-1.png",
   },
   {
     rating: 3.5,
@@ -464,4 +464,222 @@ export const blogData: blogInformation[] = [
     image: "/images/article12.png",
     url: "https://www.google.com",
   },
+  {
+    id: 13,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article1.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 14,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article2.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 15,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article3.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 16,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article4.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 17,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article5.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 18,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article6.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 19,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article7.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 20,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article8.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 21,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article9.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 22,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article10.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 23,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article11.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 24,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article12.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 25,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article1.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 26,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article2.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 27,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article3.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 28,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article4.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 29,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article5.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 30,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article6.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 31,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article7.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 32,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article8.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 33,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article9.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 34,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article10.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 35,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article11.png",
+    url: "https://www.google.com",
+  },
+  {
+    id: 36,
+    title: "Do millennials care about saving?",
+    description:
+      "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+    date: "July 15",
+    image: "/images/article12.png",
+    url: "https://www.google.com",
+  },
+  
+
 ];
