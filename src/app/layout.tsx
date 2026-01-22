@@ -5,6 +5,8 @@ import Providers from "./providers";
 import Header from "@/components/Generic/Header/Header";
 import Footer from "@/components/Generic/Footer/Footer";
 import { ToastContainer } from "react-bootstrap";
+import Script from "next/script";
+import ImageProtection from "@/components/ImageProtection";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,6 +26,11 @@ export default function RootLayout({
           <Providers>{children}</Providers>
           <Footer />
           {/* </ToastContainer> */}
+          <ImageProtection />
+          <Script
+            src="https://cdn.jsdelivr.net/gh/ColonelParrot/ProtectImage.js@v1.2/src/ProtectImage.min.js"
+            strategy="afterInteractive"
+          />
         </>
       </body>
     </html>
